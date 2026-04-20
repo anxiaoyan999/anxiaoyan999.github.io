@@ -1,27 +1,12 @@
----
-# Навыки / 技能
-widget: skills
-headless: true
-weight: 30
-title: "Навыки"
-subtitle: ""
-
-design:
-  columns: '2'
-
-skills:
-  - name: "Python"
-    percent: 75
-    description: ""
-
-  - name: "Linux / Bash"
-    percent: 80
-    description: ""
-
-  - name: "Git / GitHub"
-    percent: 70
-    description: ""
-
-  - name: "Hugo"
-    percent: 65
-    description: ""
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ань Сяоянь</title>
+</head>
+<body>
+    <h1>Ань Сяоянь</h1>
+    <p>Студент РУДН, НПИбд-01-25</p>
+    <p>Добро пожаловать на мой сайт!</p>
+</body>
+</html>

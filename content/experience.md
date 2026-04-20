@@ -31,3 +31,9 @@ sections:
       title: Languages
       username: me
 ---
+experience:
+- title: "Студент"
+  company: "РУДН"
+  location: "Москва"
+  date_start: "2025-09-01"
+  description: "Направление: Прикладная информатика"

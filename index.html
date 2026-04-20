@@ -45,6 +45,22 @@
             margin-top: 15px;
             font-size: 0.9em;
         }
+        .language-switch {
+            margin-top: 20px;
+        }
+        .language-switch a {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 0 8px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .language-switch a:hover {
+            background: rgba(255,255,255,0.4);
+        }
         .section {
             background: white;
             padding: 25px;
@@ -121,7 +137,7 @@
         }
         .resources-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
             gap: 15px;
             margin-top: 15px;
         }
@@ -173,6 +189,9 @@
             h1 {
                 font-size: 1.8em;
             }
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -182,6 +201,10 @@
             <h1>Ань Сяоянь</h1>
             <div class="subtitle">Студентка РУДН | Прикладная информатика</div>
             <div class="student-id">🎓 Номер студенческого: 1132258191</div>
+            <div class="language-switch">
+                <a href="/index.html">🇷🇺 Русский</a>
+                <a href="/en.html">🇬🇧 English</a>
+            </div>
         </header>
 
         <!-- О себе -->
@@ -238,7 +261,7 @@
             </div>
         </div>
 
-        <!-- НАУЧНЫЕ РЕСУРСЫ (НОВЫЙ РАЗДЕЛ ДЛЯ ЭКСПЕРИМЕНТА 5) -->
+        <!-- Научные ресурсы -->
         <div class="section">
             <h2>📚 Научные и библиометрические ресурсы</h2>
             <div class="resources-grid">
@@ -293,18 +316,22 @@
                 <div class="blog-summary">LaTeX — это высококачественная система вёрстки для научных документов. Примеры формул: $E = mc^2$ и $\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$.</div>
             </div>
 
-            <!-- НОВЫЙ ПОСТ ДЛЯ ЭКСПЕРИМЕНТА 5 -->
             <div class="blog-post">
                 <a href="#" class="blog-title">Неделя 5: Добавление научных ресурсов</a>
                 <div class="blog-date">20 апреля 2026</div>
                 <div class="blog-summary">На этой неделе я зарегистрировалась на научных платформах (Google Scholar, ORCID, ResearchGate) и добавила ссылки на них на сайт.</div>
             </div>
 
-            <!-- НОВЫЙ ТЕМАТИЧЕСКИЙ ПОСТ ДЛЯ ЭКСПЕРИМЕНТА 5 -->
             <div class="blog-post">
-                <a href="#" class="blog-title">Оформление отчёта: советы и рекомендации</a>
-                <div class="blog-date">20 апреля 2026</div>
-                <div class="blog-summary">Правильное оформление отчёта включает: титульный лист, оглавление, введение, основную часть, заключение и список литературы. Используйте LaTeX или Microsoft Word для профессионального вида.</div>
+                <a href="#" class="blog-title">Неделя 6: Создание двуязычного сайта</a>
+                <div class="blog-date">27 апреля 2026</div>
+                <div class="blog-summary">На этой неделе я добавила английскую версию сайта, создала кнопки переключения языков и перевела весь контент на английский язык.</div>
+            </div>
+
+            <div class="blog-post">
+                <a href="#" class="blog-title">Работа с библиографией: советы и инструменты</a>
+                <div class="blog-date">27 апреля 2026</div>
+                <div class="blog-summary">Правильное оформление библиографии важно для академической работы. Инструменты Mendeley, Zotero и BibTeX помогают организовать ссылки и цитаты.</div>
             </div>
         </div>
 

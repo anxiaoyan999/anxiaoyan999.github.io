@@ -1,39 +1,18 @@
 ---
-title: 'Experience'
-date: 2023-10-24
-type: landing
+# Опыт / 经历
+widget: experience
+headless: true
+weight: 40
+title: "Образование"
+subtitle: ""
 
 design:
-  spacing: '5rem'
+  columns: '2'
 
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
-sections:
-  - block: resume-experience
-    content:
-      username: me
-    design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
-      is_education_first: false
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: me
-  - block: resume-awards
-    content:
-      title: Awards
-      username: me
-  - block: resume-languages
-    content:
-      title: Languages
-      username: me
----
 experience:
-- title: "Студент"
-  company: "РУДН"
-  location: "Москва"
-  date_start: "2025-09-01"
-  description: "Направление: Прикладная информатика"
+  - title: "Прикладная информатика"
+    company: "Российский университет дружбы народов (РУДН)"
+    location: "Москва"
+    date_start: "2025-09-01"
+    date_end: ""
+    description: "Студентка группы НПИбд-01-25<br>Номер студенческого: 1132258191"

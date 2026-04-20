@@ -1,30 +1,21 @@
 ---
-# Accomplishments widget
+# Достижения / 成就
 widget: accomplishments
 headless: true
-active: true
 weight: 50
-title: Достижения
-subtitle: ''
+title: "Достижения"
+subtitle: ""
 
-content:
-  - title: Сертификат "Введение в Linux"
-    date_end: '2025-12-01'
-    organization: Stepik
-    organization_url: 'https://stepik.org'
-    url: 'https://stepik.org/certificate/xxxxx'
-    description: |
-        Курс по основам Linux, командной строке и системному администрированию
-        
-  - title: Участие в олимпиаде по программированию
-    date_end: '2025-04-15'
-    organization: РУДН
-    organization_url: ''
-    url: ''
-    description: |
-        Призёр внутривузовской олимпиады по программированию
----
+design:
+  columns: '2'
+
 accomplishments:
-- title: "Курс по Linux"
-  organization: "РУДН"
-  date_start: "2026-03-01"
+  - title: "Основы Linux"
+    organization: "РУДН"
+    date_start: "2026-03-01"
+    description: "Изучение командной строки, файловой системы, процессов"
+
+  - title: "Git и GitHub"
+    organization: "GitHub"
+    date_start: "2026-03-15"
+    description: "Система контроля версий, работа с репозиториями"

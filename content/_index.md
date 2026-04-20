@@ -1,14 +1,27 @@
 ---
-# Homepage
-type: widget_page
-
-# Homepage is headless, other widget pages are not.
+# Навыки / 技能
+widget: skills
 headless: true
----
+weight: 30
+title: "Навыки"
+subtitle: ""
+
+design:
+  columns: '2'
+
 skills:
-- name: "Python"
-  percent: 70
-- name: "Linux"
-  percent: 80
-- name: "Git"
-  percent: 75
+  - name: "Python"
+    percent: 75
+    description: ""
+
+  - name: "Linux / Bash"
+    percent: 80
+    description: ""
+
+  - name: "Git / GitHub"
+    percent: 70
+    description: ""
+
+  - name: "Hugo"
+    percent: 65
+    description: ""

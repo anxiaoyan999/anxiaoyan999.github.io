@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ань Сяоянь - Персональный сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .student-id {
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skill {
+            margin: 15px 0;
+        }
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .skill-bar {
+            background: #ecf0f1;
+            height: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .skill-fill {
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            height: 100%;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .experience-item, .accomplishment-item {
+            margin-bottom: 20px;
+        }
+        .experience-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .experience-company {
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        .blog-post {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .blog-post:last-child {
+            border-bottom: none;
+        }
+        .blog-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .blog-title:hover {
+            color: #3498db;
+        }
+        .blog-date {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin: 5px 0;
+        }
+        .blog-summary {
+            color: #555;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.85em;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ань Сяоянь</h1>
+            <div class="subtitle">Студентка РУДН | Прикладная информатика</div>
+            <div class="student-id">🎓 Номер студенческого: 1132258191</div>
+        </header>
+
+        <!-- О себе -->
+        <div class="section">
+            <h2>📖 О себе</h2>
+            <p>Студентка <strong>Российского университета дружбы народов (РУДН)</strong> направления <strong>"Прикладная информатика"</strong>.</p>
+            <p>Группа: <strong>НПИбд-01-25</strong></p>
+            <p>Интересуюсь операционными системами, веб-разработкой и системами контроля версий.</p>
+        </div>
+
+        <!-- Навыки -->
+        <div class="section">
+            <h2>💻 Навыки</h2>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 75%">75%</div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Linux / Bash</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%">80%</div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Git / GitHub</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%">70%</div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">HTML / CSS</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 65%">65%</div></div>
+            </div>
+        </div>
+
+        <!-- Образование -->
+        <div class="section">
+            <h2>🎓 Образование</h2>
+            <div class="experience-item">
+                <div class="experience-title">Прикладная информатика</div>
+                <div class="experience-company">Российский университет дружбы народов (РУДН) — Москва</div>
+                <div>2025 - 2029</div>
+            </div>
+        </div>
+
+        <!-- Достижения -->
+        <div class="section">
+            <h2>🏆 Достижения</h2>
+            <div class="accomplishment-item">
+                <div class="experience-title">Основы операционных систем</div>
+                <div class="experience-company">РУДН — Март 2026</div>
+                <div>Изучение архитектуры Linux, командной строки, процессов</div>
+            </div>
+            <div class="accomplishment-item">
+                <div class="experience-title">Git и GitHub</div>
+                <div class="experience-company">GitHub — Март 2026</div>
+                <div>Система контроля версий, работа с репозиториями</div>
+            </div>
+        </div>
+
+        <!-- Блог -->
+        <div class="section">
+            <h2>📝 Блог</h2>
+
+            <div class="blog-post">
+                <a href="#" class="blog-title">Неделя 4: Работа над сайтом</a>
+                <div class="blog-date">20 апреля 2026</div>
+                <div class="blog-summary">На этой неделе я добавила навыки, образование и достижения на сайт. Изучила основы Hugo, Git и GitHub Pages.</div>
+            </div>
+
+            <div class="blog-post">
+                <a href="#" class="blog-title">Введение в LaTeX</a>
+                <div class="blog-date">20 апреля 2026</div>
+                <div class="blog-summary">LaTeX — это высококачественная система вёрстки для научных документов. Примеры формул: $E = mc^2$ и $\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$.</div>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div class="section">
+            <h2>🔗 Контакты</h2>
+            <div class="social-links">
+                <a href="https://github.com/anxiaoyan999" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 Ань Сяоянь. Все права защищены.
+        </footer>
+    </div>
+</body>
+</html>

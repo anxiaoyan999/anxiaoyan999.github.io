@@ -24,3 +24,7 @@ content:
     description: |
         Призёр внутривузовской олимпиады по программированию
 ---
+accomplishments:
+- title: "Курс по Linux"
+  organization: "РУДН"
+  date_start: "2026-03-01"

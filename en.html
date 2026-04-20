@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Xiaoyan - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .language-switch {
+            margin-top: 15px;
+        }
+        .language-switch a {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            display: inline-block;
+        }
+        .language-switch a:hover {
+            background: rgba(255,255,255,0.4);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .student-id {
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skill {
+            margin: 15px 0;
+        }
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .skill-bar {
+            background: #ecf0f1;
+            height: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .skill-fill {
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            height: 100%;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .experience-item, .accomplishment-item {
+            margin-bottom: 20px;
+        }
+        .experience-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .experience-company {
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        .blog-post {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .blog-post:last-child {
+            border-bottom: none;
+        }
+        .blog-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .blog-title:hover {
+            color: #3498db;
+        }
+        .blog-date {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin: 5px 0;
+        }
+        .blog-summary {
+            color: #555;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .resource-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .resource-card a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+        .resource-card p {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 5px;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.85em;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>An Xiaoyan</h1>
+            <div class="subtitle">RUDN Student | Applied Informatics</div>
+            <div class="student-id">🎓 Student ID: 1132258191</div>
+            <div class="language-switch">
+                <a href="/index.html">Русский</a>
+                <a href="/en.html">English</a>
+            </div>
+        </header>
+
+        <!-- About -->
+        <div class="section">
+            <h2>📖 About Me</h2>
+            <p>Student at <strong>Peoples' Friendship University of Russia (RUDN University)</strong>, majoring in <strong>"Applied Informatics"</strong>.</p>
+            <p>Group: <strong>NPBd-01-25</strong></p>
+            <p>Interested in operating systems, web development, and version control systems.</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>💻 Skills</h2>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 75%">75%</div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Linux / Bash</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%">80%</div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Git / GitHub</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%">70%</div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">HTML / CSS</div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 65%">65%</div></div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2>🎓 Education</h2>
+            <div class="experience-item">
+                <div class="experience-title">Applied Informatics</div>
+                <div class="experience-company">Peoples' Friendship University of Russia (RUDN) — Moscow</div>
+                <div>2025 - 2029</div>
+            </div>
+        </div>
+
+        <!-- Accomplishments -->
+        <div class="section">
+            <h2>🏆 Accomplishments</h2>
+            <div class="accomplishment-item">
+                <div class="experience-title">Operating Systems Basics</div>
+                <div class="experience-company">RUDN — March 2026</div>
+                <div>Study of Linux architecture, command line, processes</div>
+            </div>
+            <div class="accomplishment-item">
+                <div class="experience-title">Git and GitHub</div>
+                <div class="experience-company">GitHub — March 2026</div>
+                <div>Version control system, working with repositories</div>
+            </div>
+        </div>
+
+        <!-- Scientific Resources -->
+        <div class="section">
+            <h2>📚 Scientific and Bibliometric Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <a href="https://github.com/anxiaoyan999" target="_blank">GitHub</a>
+                    <p>Project repositories</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+                    <p>Academic publications</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://orcid.org/" target="_blank">ORCID</a>
+                    <p>Unique researcher identifier</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a>
+                    <p>Scientific network</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.mendeley.com/" target="_blank">Mendeley</a>
+                    <p>Reference manager</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://arxiv.org/" target="_blank">arXiv</a>
+                    <p>Preprint archive</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://elibrary.ru/" target="_blank">eLibrary</a>
+                    <p>Russian scientific library</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.academia.edu/" target="_blank">Academia.edu</a>
+                    <p>Research sharing platform</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog -->
+        <div class="section">
+            <h2>📝 Blog</h2>
+
+            <div class="blog-post">
+                <a href="#" class="blog-title">Week 6: Making the Site Bilingual</a>
+                <div class="blog-date">April 27, 2026</div>
+                <div class="blog-summary">This week I added English version of my website, created language switching buttons, and translated all content into English.</div>
+            </div>
+
+            <div class="blog-post">
+                <a href="#" class="blog-title">Working with Bibliography: Tips and Tools</a>
+                <div class="blog-date">April 27, 2026</div>
+                <div class="blog-summary">Proper bibliography management is essential for academic work. Tools like Mendeley, Zotero, and BibTeX help organize references and citations efficiently.</div>
+            </div>
+        </div>
+
+        <!-- Contacts -->
+        <div class="section">
+            <h2>🔗 Contacts</h2>
+            <div class="social-links">
+                <a href="https://github.com/anxiaoyan999" target="_blank">GitHub</a>
+                <a href="mailto:anxiaoyan999@example.com">Email</a>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 An Xiaoyan. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

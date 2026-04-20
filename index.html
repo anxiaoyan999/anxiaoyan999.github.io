@@ -119,6 +119,36 @@
         .blog-summary {
             color: #555;
         }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .resource-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .resource-card a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+        .resource-card p {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 5px;
+        }
         .social-links {
             margin-top: 15px;
         }
@@ -208,6 +238,45 @@
             </div>
         </div>
 
+        <!-- НАУЧНЫЕ РЕСУРСЫ (НОВЫЙ РАЗДЕЛ ДЛЯ ЭКСПЕРИМЕНТА 5) -->
+        <div class="section">
+            <h2>📚 Научные и библиометрические ресурсы</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <a href="https://github.com/anxiaoyan999" target="_blank">GitHub</a>
+                    <p>Репозитории проектов</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+                    <p>Академические публикации</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://orcid.org/" target="_blank">ORCID</a>
+                    <p>Уникальный идентификатор</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a>
+                    <p>Научная сеть</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.mendeley.com/" target="_blank">Mendeley</a>
+                    <p>Менеджер ссылок</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://arxiv.org/" target="_blank">arXiv</a>
+                    <p>Препринты</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://elibrary.ru/" target="_blank">eLibrary</a>
+                    <p>Российская научная библиотека</p>
+                </div>
+                <div class="resource-card">
+                    <a href="https://www.academia.edu/" target="_blank">Academia.edu</a>
+                    <p>Обмен исследованиями</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Блог -->
         <div class="section">
             <h2>📝 Блог</h2>
@@ -223,6 +292,20 @@
                 <div class="blog-date">20 апреля 2026</div>
                 <div class="blog-summary">LaTeX — это высококачественная система вёрстки для научных документов. Примеры формул: $E = mc^2$ и $\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$.</div>
             </div>
+
+            <!-- НОВЫЙ ПОСТ ДЛЯ ЭКСПЕРИМЕНТА 5 -->
+            <div class="blog-post">
+                <a href="#" class="blog-title">Неделя 5: Добавление научных ресурсов</a>
+                <div class="blog-date">20 апреля 2026</div>
+                <div class="blog-summary">На этой неделе я зарегистрировалась на научных платформах (Google Scholar, ORCID, ResearchGate) и добавила ссылки на них на сайт.</div>
+            </div>
+
+            <!-- НОВЫЙ ТЕМАТИЧЕСКИЙ ПОСТ ДЛЯ ЭКСПЕРИМЕНТА 5 -->
+            <div class="blog-post">
+                <a href="#" class="blog-title">Оформление отчёта: советы и рекомендации</a>
+                <div class="blog-date">20 апреля 2026</div>
+                <div class="blog-summary">Правильное оформление отчёта включает: титульный лист, оглавление, введение, основную часть, заключение и список литературы. Используйте LaTeX или Microsoft Word для профессионального вида.</div>
+            </div>
         </div>
 
         <!-- Контакты -->
@@ -230,6 +313,7 @@
             <h2>🔗 Контакты</h2>
             <div class="social-links">
                 <a href="https://github.com/anxiaoyan999" target="_blank">GitHub</a>
+                <a href="mailto:anxiaoyan999@example.com">Email</a>
             </div>
         </div>
 
